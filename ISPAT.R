@@ -6,9 +6,10 @@
 pacman::p_load(doParallel, foreach, rstan, Matrix, matrixcalc, BiocManager, cmdstanr, parallel, CVglasso)
 #----------------------
 
-source("C:/Users/bhadury/University of Michigan Dropbox/Sagnik Bhadury/CODES/SBTurboCodes/domain informed/svi_msfa.R")
-source("C:/Users/bhadury/University of Michigan Dropbox/Sagnik Bhadury/CODES/SBTurboCodes/domain informed/cavi_msfa.R")
-source("C:/Users/bhadury/University of Michigan Dropbox/Sagnik Bhadury/CODES/SBTurboCodes/domain informed/stan programs.R")
+source("svi_msfa.R")
+source("cavi_msfa.R")
+source("stan programs.R")
+source("extr_loop.R)
 
 #-----------------------
 # specify data type
@@ -47,7 +48,6 @@ ISPAT <- function(Y,S,ncores, RefPrior,
   ## MSFA_method: MSFA method can be implemented with two different type of algorithms (CAVI ro SVI)
 
   ## SVI not giving good results, use CAVI
-  # generated_data <- readRDS(paste0("C:/Users/bhadury/University of Michigan Dropbox/Sagnik Bhadury/CODES/SBTurboCodes/domain informed/simulations/maySim/simData","_N_1_",N_c[1], "_N_2_",N_c[2] , "_N_3_", N_c[3],"_cells_",G,"_repli_",5,"_",Matern,"_ls50_datagenerate.rds"), refhook = NULL)
   # Y <- generated_data$Obs_matrix[[1]]
   # S <- generated_data$Coords_annotations
   # RefPrior = diag(1, nrow = dim(Y)[1], ncol = dim(Y)[1])
