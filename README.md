@@ -1,4 +1,5 @@
-# ISPAT
+# ISPAT : Informed Spatially aware Patterns for Multiplexed Immunofluorescence Data
+# multi modal integration
 
 ```
   mydata <- readRDS(file = paste0(savepath,"data/",
