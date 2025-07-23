@@ -1,5 +1,5 @@
 # ISPAT : Informed Spatially aware Patterns for Multiplexed Immunofluorescence Data
-with multi modal integration for Poisson and Gaussian Spatial mixed effects model
+with multi modal integration for Poisson and Gaussian Spatial mixed effects model is possible with this repository
 
 ```
   mydata <- readRDS(file = paste0(savepath,"data/",
